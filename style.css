@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+body{
+    background-size: contain;
+    background-image:url(./assets/images/paper1.jpg)
+    
+     }
+
+     
+.container{
+    display:fixed;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    border:1px solid black;
+    align-items: center;
+    margin:auto;
+    margin-top: 150px;
+    background-color: rgba(253, 255, 255, 0.5);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    font-family: 'Anton', sans-serif;
+    }
+
+h1{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+input{
+    display:flex;
+    margin: 18px;
+    padding: 10px;
+    width: 85%;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+
+button{
+    margin: auto;
+    display:flex;
+    font-family: 'Anton', sans-serif;
+    padding: 10px 20px;
+    background-color: rgba(245, 230, 229, 0.5);
+    box-shadow: inset -3px -3px rgba(0, 0, 0, 0.5);
+    color: black;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba (255, 255, 255, 0.1);
+    color: rgb(163, 13, 13);
+}
+
+::placeholder{
+    color:rgb(0, 0, 0);
+    opacity: 0.75
+}
+
+
+#resultado{
+    text-align: center;
+    margin-top: 30px;
+    padding:0%;
+    font-size: 23px;
+    justify-content: center;
+}
+
+
+p{
+    margin: 8px;
+}
+
+
+
+.anuncio{
+    text-indent: 10px;
+    margin-left: 150px;
+    text-align: center;
+    float:left;
+    height: 100px;
+    width: 400px;
+    border:1px solid black;
+    background-color: rgba(253, 255, 255, 0.5);
+    box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    font-family: 'Anton', sans-serif;
+    }
+
+
+    @media screen and (max-width: 1400px) {
+        .anuncio, .container{
+            margin: auto;
+            margin-bottom: 30px;
+            align-items: center;
+            float:none;
+            width:400px;
+           
+            }
+          }
+    
+
+          @media screen and (max-width: 740px){
+
+            body{
+                max-height: 2000;
+            }
+
+            .anuncio, .container{
+            margin: auto;
+            overflow: -moz-hidden-unscrollable;
+            width: 80%;
+            min-width: 300px;
+            }
+
+            
+            h2{
+                padding-top: 30px;
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 20px;
+            }
+
+            .container{
+                margin-top: 30px;
+            }
+          }
